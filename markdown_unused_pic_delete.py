@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# 本程序用于批量删除markdown文档图片文件夹中未使用的图片
+# 仅适用于一个md文档对应一个图片文件夹的情况
+# 默认路径格式为md文档与其图片文件夹同名
 
 import os, sys, getopt, glob, re
 
