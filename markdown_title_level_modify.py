@@ -41,8 +41,14 @@ def rm_hash_sign(file_path):
     print(f'修改完成 {file_path}，共{_}处')
 
 if __name__ == '__main__':
-    root_path = 'C:\\Users\\Dawnyh\\Desktop\\杂记'
+    # 指定根目录，对目录下的所有md文档做修改
+    root_path = 'C:\\Users\\test\\Desktop\\新建文件夹'
     md_list = list(get_mds(root_path))
     for md in md_list:
         add_hash_sign(md)
         # rm_hash_sign(md)
+    
+    # # 对单一文件做修改
+    # target = '/Users/test/Desktop/test.md'
+    # rm_hash_sign(target)
+    # # add_hash_sign(target)
